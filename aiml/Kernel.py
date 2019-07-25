@@ -999,7 +999,7 @@ class Kernel:
         # space.  To improve performance, we do this only once for each
         # text element encountered, and save the results for the future.
         if elem[1]["xml:space"] == "default":
-            elem[2] = re.sub("\s+", " ", elem[2])
+            elem[2] = re.sub(r"\s+", " ", elem[2])
             elem[1]["xml:space"] = "preserve"
         return elem[2]
 

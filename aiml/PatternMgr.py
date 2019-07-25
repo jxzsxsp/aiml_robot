@@ -27,9 +27,9 @@ class PatternMgr:
         self._root = {}
         self._templateCount = 0
         self._botName = u"Nameless"
-        punctuation = "\"`~!@#$%^&*()-_=+[{]}\|;:',<.>/?"
+        punctuation = r"""`~!@#$%^&*()-_=+[{]}\|;:'",<.>/?"""
         self._puncStripRE = re.compile("[" + re.escape(punctuation) + "]")
-        self._whitespaceRE = re.compile("\s+", re.UNICODE)
+        self._whitespaceRE = re.compile(r"\s+", re.UNICODE)
 
     def numTemplates(self):
         """Return the number of templates currently stored."""
