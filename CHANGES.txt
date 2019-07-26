@@ -1,5 +1,9 @@
 Changelog for python-aiml
 
+version 0.9.2
+* Use raw strings for regex patterns [Harmon758]
+
+
 version 0.9.1
 
 * Fixed compatibility with Python 3.6 (removed usage of re.LOCALE) [Ryan Arredondo]
