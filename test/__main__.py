@@ -31,7 +31,7 @@ def script_list( path ):
     Get all the python scripts in a directory. Scripts are taken as all 
     files ending in ``.py`` that do not start with an underscore or dot.
     """
-    regexp = re.compile( '^([^_\.].+)\.py$' )
+    regexp = re.compile( r'^([^_\.].+)\.py$' )
     r = []
     for f in os.listdir(path):
         if os.path.isdir( os.path.join(path,f) ):

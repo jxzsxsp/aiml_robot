@@ -9,8 +9,11 @@ from aiml.constants import VERSION
 
 #package_prefix = "Lib/site-packages/aiml"
 
+PKGNAME = 'python-aiml'
+GITHUB_URL = 'https://github.com/paulovn/' + PKGNAME
 
-setup_args = dict( name="python-aiml",
+
+setup_args = dict( name=PKGNAME,
     version=VERSION,
     author="Paulo Villegas",
     author_email="paulo.vllgs@gmail.com",
@@ -23,7 +26,8 @@ It can be used to implement a conversational AI program.
 Forked from PyAIML 0.8.6 (https://github.com/cdwfs/pyaiml) 
 PyAIML (c) Cort Stratton
 """,
-    url="https://github.com/paulovn/python-aiml",
+    url=GITHUB_URL,
+    download_url = GITHUB_URL + '/tarball/v' + VERSION,
     platforms=["any"],
     classifiers=["Development Status :: 4 - Beta",
                  "Environment :: Console",
