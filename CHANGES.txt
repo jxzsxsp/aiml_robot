@@ -1,5 +1,11 @@
 Changelog for python-aiml
 
+version 0.9.3
+* Replace time.clock() by time.time(), since time.clock() has been removed in
+  python 3.8 [Harmon758]
+* slight modifications towards PEP-8 compliance
+
+
 version 0.9.2
 * Use raw strings for regex patterns [Harmon758]
 

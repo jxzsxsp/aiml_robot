@@ -30,7 +30,24 @@ The installation includes two AIML datasets:
   validate as `AIML 1.0.1`_)
 
 They can be loaded via the ``bootstrap`` method in the ``Kernel`` class. See 
-the `bot.py`_ script for an example.
+the `bot.py`_ script for an example. Basically the bootstrap method performs
+two steps:
+
+* ``learn("startup.xml")`` reads & parses that file, which contains a single
+  pattern "LOAD ALICE", whose action is ``<learn>*.aiml</learn>``
+* then, ``respond("load alice")`` executes that loaded pattern, which in turn
+  learns all the ``*.aiml`` files
+
+Note: given that ``<learn>*.aiml</learn>`` tries to find all ``*.aiml`` files
+in the current directory (since it contains the filename as a base path) the
+Python process needs to have the AIML directory *as its current directory* for
+it to work. Otherwise it will not find any file and will silently fail.
+For that reason, the ``bootstrap()`` method has an optional argument
+``chdir`` that makes the it change to that directory before performing any
+learn or command execution (but after loadBrain processing). Upon returning
+the current directory is moved back to where it was before.
+
+
 
 
 
@@ -47,7 +64,8 @@ or they can also be launched by directly calling::
   python test [testname ...]
 
 This last version allows executing only some of the test files by explicitly
-naming them in the command line; if none is specified all will be executed.
+naming them in the command line (use the filename without the ``test_`` prefix
+and the ``.py`` suffix); if none is specified all will be executed.
 
 
 
