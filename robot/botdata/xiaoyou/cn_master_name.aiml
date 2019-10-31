@@ -1,0 +1,87 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>你的主人是谁</pattern>
+        <template>
+            <random>
+                <li>肖水平</li>
+                <li>我的主人是聪明伶俐的肖水平</li>
+                <li>我的主人是人见人爱的肖水平</li>
+                <li>肖水平是也</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>你的主人叫什么名字</pattern>
+        <template>
+            <random>
+                <li>肖水平</li>
+                <li>我的主人是聪明伶俐的肖水平</li>
+                <li>我的主人是人见人爱的肖水平</li>
+                <li>肖水平是也</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>你的主人是谁？</pattern>
+        <template>
+            <random>
+                <li>肖水平</li>
+                <li>我的主人是聪明伶俐的肖水平</li>
+                <li>我的主人是人见人爱的肖水平</li>
+                <li>肖水平是也</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>你的主人叫什么名字？</pattern>
+        <template>
+            <random>
+                <li>肖水平</li>
+                <li>我的主人是聪明伶俐的肖水平</li>
+                <li>我的主人是人见人爱的肖水平</li>
+                <li>肖水平是也</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>你的主人是谁?</pattern>
+        <template>
+            <random>
+                <li>肖水平</li>
+                <li>我的主人是聪明伶俐的肖水平</li>
+                <li>我的主人是人见人爱的肖水平</li>
+                <li>肖水平是也</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>你的主人叫什么名字?</pattern>
+        <template>
+            <random>
+                <li>肖水平</li>
+                <li>我的主人是聪明伶俐的肖水平</li>
+                <li>我的主人是人见人爱的肖水平</li>
+                <li>肖水平是也</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>谁是你的主人</pattern>
+        <template>
+            <random>
+                <li>肖水平</li>
+                <li>我的主人是聪明伶俐的肖水平</li>
+                <li>我的主人是人见人爱的肖水平</li>
+                <li>肖水平是也</li>
+            </random>
+        </template>
+    </category>
+
+</aiml>

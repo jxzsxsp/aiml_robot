@@ -8,3 +8,5 @@ python_aiml.egg-info
 
 *.brn
 *.brain
+
+.idea

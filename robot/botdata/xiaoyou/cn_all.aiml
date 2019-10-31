@@ -1,0 +1,19 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>今天天气怎么样？</li>
+                <li>你喜欢所什么歌？</li>
+                <li>你有喜欢的人吗？</li>
+                <li>你喜欢去哪里旅游？</li>
+                <li>你的家乡在哪里？</li>
+                <li>你喜欢我吗？</li>
+                <li>你最喜欢的明星是谁？</li>
+                <li>你觉得什么东西最好吃？</li>
+            </random>
+        </template>
+    </category>
+
+</aiml>
